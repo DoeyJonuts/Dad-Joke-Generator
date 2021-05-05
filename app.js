@@ -10,7 +10,7 @@ const getDadJoke = async () => {
         const dadJoke = (res.data.joke);
         return dadJoke;
     } catch(e){
-        console.log('Sorry, no jokes :-(', e)
+        console.log('Sorry, no jokes today :-(', e)
     }
 
 }
