@@ -19,7 +19,7 @@ const addNewJoke = async () => {
     const jokeContent = await getDadJoke();
     const jokeList = document.querySelector('#jokeList');
     const newLi = document.createElement('li');
-    newLi.append(jokeContent);
+    newLi.append(`"${jokeContent}"`);
     jokeList.appendChild(newLi);
 }
 
